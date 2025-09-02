@@ -9,8 +9,8 @@ jobs:
         run: git version
       - name: Docker Version
         run: docker --version
-      - name : Maven --version
-        run: mvn version
+      - name : Maven version
+        run: mvn --version
 
 
         
