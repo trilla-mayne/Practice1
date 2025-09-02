@@ -1,0 +1,24 @@
+name: Testapps
+on: push
+jobs: 
+
+    GetGitVersion:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Git Version
+        run: git version
+      - name: Docker Version
+        run: docker --version
+      - name : Maven version
+        run: mvn version
+
+
+        
+    pingApps:
+      runs-on: ubuntu-latest
+      steps:
+      - name: pingGoogle
+        run: ping -c 4 google.com
+      - name: pingfacebook
+        run: ping -c 4 facebook.com
+     
