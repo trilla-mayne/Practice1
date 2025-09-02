@@ -20,5 +20,5 @@ jobs:
       - name: ubuntuVersion
         run: hostnamectl
       - name: getDiskusage
-        run: df -th
+        run: df -Th
      
