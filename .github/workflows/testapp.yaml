@@ -18,7 +18,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: ubuntuVersion
-        run: phostnamectl
+        run: hostnamectl
       - name: getDiskusage
         run: df -th
      
