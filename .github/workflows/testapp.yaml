@@ -23,4 +23,14 @@ jobs:
         run: hostnamectl
       - name: getDiskusage
         run: df -Th
+
+    OSversioncopy:
+      runs-on: ubuntu-latest
+      needs: OSversion
+      
+      steps:
+      - name: ubuntuVersion
+        run: hostnamectl
+      - name: getDiskusage
+        run: df -Th
      
