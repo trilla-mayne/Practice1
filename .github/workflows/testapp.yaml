@@ -16,6 +16,8 @@ jobs:
         
     OSversion:
       runs-on: ubuntu-latest
+      needs: GetGitVersion
+      
       steps:
       - name: ubuntuVersion
         run: hostnamectl
