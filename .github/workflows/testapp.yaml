@@ -14,11 +14,11 @@ jobs:
 
 
         
-    pingApps:
+    OSversion:
       runs-on: ubuntu-latest
       steps:
-      - name: pingGoogle
-        run: ping -c 4 google.com
-      - name: pingfacebook
-        run: ping -c 4 facebook.com
+      - name: ubuntuVersion
+        run: phostnamectl
+      - name: getDiskusage
+        run: df -th
      
